@@ -224,7 +224,7 @@ unsigned long ymodem_receive(unsigned char *buf, unsigned long length)
 	unsigned char packet_data[PACKET_1K_SIZE + PACKET_OVERHEAD];
 	int packet_length, i, file_done, session_done, crc_tries, crc_nak;
 	unsigned int packets_received, errors, first_try = 1;
-	char file_name[FILE_NAME_LENGTH], file_size[FILE_SIZE_LENGTH], *file_ptr;
+	char file_name[FILE_NAME_LENGTH + 1], file_size[FILE_SIZE_LENGTH + 1], *file_ptr;
 	unsigned char *buf_ptr;
 	unsigned long size = 0;
 
