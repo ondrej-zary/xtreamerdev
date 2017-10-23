@@ -21,8 +21,7 @@ SECTIONS
 	}
 
 	/* See command.h */
-	. = ALIGN(4);
-	.commandlist : {
+	.commandlist  ALIGN(0x4) : {
 		__commandlist_start = .;
 		*(.commandlist)
 		__commandlist_end = .;
