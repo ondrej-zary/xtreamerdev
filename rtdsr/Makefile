@@ -1,6 +1,6 @@
-XCC = sde-gcc
-OBJDUMP= sde-objdump
-OBJCOPY= sde-objcopy
+XCC = mips-sde-elf-gcc
+OBJDUMP= mips-sde-elf-objdump
+OBJCOPY= mips-sde-elf-objcopy
 
 CFLAGS        = -mno-gpopt -gdwarf-2 -O0 -G0 -Wa,-W -nostdlib -I include
 CXXFLAGS      = $(CFLAGS) -Wa,--gdwarf2
